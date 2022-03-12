@@ -1,0 +1,54 @@
+:root {
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --VeryLightGrayishBlue: hsl(236, 33%, 92%);
+  --LightGrayishBlue: hsl(233, 11%, 84%);
+  --DarkGrayishBlue: hsl(236, 9%, 61%);
+  --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+.hero {
+  background-image: url("/todoapp/assets/images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  height: 26vw;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 36px;
+  color: var(--VeryLightGray);
+  padding: 5vw;
+}
+
+#newItem {
+  border-radius: 200px;
+}
+
+.formDiv {
+  text-align: center;
+}
+.form {
+  height: 3vw;
+  width: 36vw;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.form:focus {
+  outline: none;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
