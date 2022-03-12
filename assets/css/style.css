@@ -36,12 +36,29 @@ body {
   width: 36vw;
   border-radius: 5px;
   border-style: none;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+}
+
+.item {
+  text-align: left;
+  margin: auto;
+  background-color: white;
+  list-style-type: none;
+  width: 36vw;
+  height: 3vw;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 .form:focus {
   outline: none;
   font-family: "Josefin Sans";
   font-size: 18px;
+}
+
+.btn {
+  display: none;
 }
 
 .attribution {
