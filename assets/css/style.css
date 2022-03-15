@@ -6,6 +6,11 @@
   --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
 }
 
+.strikethrough {
+  text-decoration: line-through;
+  color: var(--LightGrayishBlue);
+}
+
 body {
   font-family: "Josefin Sans";
 }

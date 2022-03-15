@@ -40,22 +40,22 @@ function submitItem(event) {
     tickerEl.textContent = ticker;
     console.log("X");
   });
-}
-
-function checkOff(event) {
-  if (event.target.checked) {
-    console.log(ticker);
-    ticker--;
-    tickerEl.textContent = ticker;
-    console.log("check!");
+  function checkOff(event) {
+    if (event.target.checked) {
+      console.log(event.target);
+      ticker--;
+      tickerEl.textContent = ticker;
+      itemEl.classList.add("strikethrough");
+      console.log("check!");
+    }
+    if (!event.target.checked) {
+      console.log("uncheck!");
+      itemEl.classList.remove("strikethrough");
+      ticker++;
+      tickerEl.textContent = ticker;
+    }
   }
-  if (!event.target.checked) {
-    console.log("uncheck!");
-    ticker++;
-    tickerEl.textContent = ticker;
-  }
+  todoList.addEventListener("change", checkOff);
 }
 
 formEl.addEventListener("submit", submitItem);
-
-todoList.addEventListener("change", checkOff);
