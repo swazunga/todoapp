@@ -63,6 +63,8 @@ body {
 }
 
 .lastRow {
+  display: flex;
+  justify-content: space-around;
   margin: auto auto 2vw auto;
   vertical-align: bottom;
   background-color: white;
@@ -73,6 +75,10 @@ body {
   font-size: 12px;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
   line-height: 3vw;
+}
+
+.itemsLeft {
+  margin-left: -5vw;
 }
 
 .form:focus {
